@@ -1,4 +1,4 @@
-export const menu = [
+export const menus = [
     {
         id: 'agent',
         isShowed: true,

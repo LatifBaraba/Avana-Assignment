@@ -8,13 +8,15 @@ import './App.scss'
 
 import Layout from './layouts/main'
 import Home from './pages/home'
+import Page from './pages/page'
 
 ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <Switch>
                 <Layout>
-                    <Route path="/" component={Home} />
+                    <Route path="/" exact component={Home} />
+                    <Route path="/page" component={Page} />
                 </Layout>
             </Switch>
         </Router>

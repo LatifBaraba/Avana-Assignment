@@ -1,8 +1,12 @@
-import { menu } from '../utilities/constants/data'
+import { menus } from '../utilities/constants/data'
 
 const Home = () => {
-    console.log(menu)
-    return <div className="content"></div>
+    console.log(menus)
+    return (
+        <div className="content">
+            <h1>This is home</h1>
+        </div>
+    )
 }
 
 export default Home
