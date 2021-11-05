@@ -9,6 +9,7 @@ import './App.scss'
 import Layout from './layouts/main'
 import Home from './pages/home'
 import Page from './pages/page'
+import MenuSetting from './pages/menuSetting'
 
 ReactDOM.render(
     <Provider store={store}>
@@ -17,6 +18,7 @@ ReactDOM.render(
                 <Layout>
                     <Route path="/" exact component={Home} />
                     <Route path="/page" component={Page} />
+                    <Route path="/menu-setting" component={MenuSetting} />
                 </Layout>
             </Switch>
         </Router>
