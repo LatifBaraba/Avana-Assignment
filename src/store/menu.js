@@ -9,9 +9,23 @@ export const menu = createSlice({
     name: 'menu',
     initialState,
     reducers: {
+        changeAllowed: (state, { payload }) => {
+            state.data.forEach(value => {
+                if (value.id === payload ) {
+                    value.isAllowed = !value.isAllowed
+                }
+            })
+        },
+        changeShowed: (state, { payload }) => {
+            state.data.forEach(value => {
+                if (value.id === payload ) {
+                    value.isShowed = !value.isShowed
+                }
+            })
+        },
     },
 })
 
-// export const { getRandom, getRandomSuccess, getRandomFailure } = user.actions
+export const { changeAllowed, changeShowed } = menu.actions
 
 export default menu.reducer

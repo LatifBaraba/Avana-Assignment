@@ -14,7 +14,7 @@ const sidebar = () => {
                 <div className="user">
                     <img className="user-img" src="https://i.stack.imgur.com/zjxDZ.png?s=420&g=1" alt="avana" />
                     <div className="user-name">
-                        <span>Arief Ramdhani</span>
+                        <span>Nabil Baraba</span>
                     </div>
                     <div className="menu-setting">
                         <div className="setting-icon">
